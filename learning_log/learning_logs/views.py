@@ -63,11 +63,28 @@ def edit_topic(request, topic_id):
         form = TopicForm()
     else:
         # POST data submitted; process data
-        form = TopicForm(data = request.POST)
+        form = TopicForm(instance = topic, data = request.POST)
         if form.is_valid():
-            topic.text = form.cleaned_data['text']
-            topic.save()
+            form.save()
             return redirect('learning_logs:topics')
     # Display a blank or invalid form
     context = {'topic': topic, 'form': form}
     return render(request, 'learning_logs/edit_topic.html', context)
+
+def edit_entry(request, topic_id, entry_id):
+    """Edit an entry"""
+    topic = Topic.objects.get(id = topic_id)
+    entry = Entry.objects.get(id = entry_id)
+
+    if request.method != 'POST':
+        # No data submitted; create a blank form
+        form = EntryForm()
+    else:
+        # POST data submitted; process data
+        form = EntryForm(instance = entry, data = request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('learning_logs:topic', topic_id = topic_id)
+    # Display a blank or invalid form
+    context = {'topic': topic, 'entry': entry, 'form': form}
+    return render(request, 'learning_logs/edit_entry.html', context)
