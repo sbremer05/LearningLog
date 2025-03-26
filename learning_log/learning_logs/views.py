@@ -53,3 +53,21 @@ def new_entry(request, topic_id):
     # Display a blank or invalid form
     context = {'topic': topic, 'form': form}
     return render(request, 'learning_logs/new_entry.html', context)
+
+def edit_topic(request, topic_id):
+    """Edit a topic"""
+    topic = Topic.objects.get(id = topic_id)
+
+    if request.method != 'POST':
+        # No data submitted; create a blank form
+        form = TopicForm()
+    else:
+        # POST data submitted; process data
+        form = TopicForm(data = request.POST)
+        if form.is_valid():
+            topic.text = form.cleaned_data['text']
+            topic.save()
+            return redirect('learning_logs:topics')
+    # Display a blank or invalid form
+    context = {'topic': topic, 'form': form}
+    return render(request, 'learning_logs/edit_topic.html', context)

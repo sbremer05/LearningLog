@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5300d21b-ade0-4aaa-895a-a0e88a4309f9" name="Changes" comment="User can now add topics">
-      <change afterPath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/new_entry.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/topic.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/topic.html" afterDir="false" />
+    <list default="true" id="5300d21b-ade0-4aaa-895a-a0e88a4309f9" name="Changes" comment="User can now add entries for topics">
+      <change afterPath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/edit_topic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/topics.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/topics.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/views.py" afterDir="false" />
     </list>
@@ -90,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1743003316282</updated>
-      <workItem from="1743003317324" duration="6600000" />
+      <workItem from="1743003317324" duration="7437000" />
     </task>
     <task id="LOCAL-00001" summary="Django added">
       <option name="closed" value="true" />
@@ -140,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743010908815</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="User can now add entries for topics">
+      <option name="closed" value="true" />
+      <created>1743011438360</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1743011438360</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,7 +160,8 @@
     <MESSAGE value="Topics added" />
     <MESSAGE value="URL's have been added for RESTful implementation, and users can now view all topics and their entries" />
     <MESSAGE value="User can now add topics" />
-    <option name="LAST_COMMIT_MESSAGE" value="User can now add topics" />
+    <MESSAGE value="User can now add entries for topics" />
+    <option name="LAST_COMMIT_MESSAGE" value="User can now add entries for topics" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
