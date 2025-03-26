@@ -8,3 +8,19 @@ class Topic(models.Model):
     def __str__(self):
         """Return a string representation of the model"""
         return self.text
+
+class Entry(models.Model):
+    """Something specific learned about a topic"""
+    topic = models.ForeignKey(Topic, on_delete = models.CASCADE)
+    text = models.TextField()
+    date_added = models.DateTimeField(auto_now_add = True)
+
+    # Override Django reference to refer to multiple as "Entries" not "Entrys"
+    class Meta:
+        verbose_name_plural = 'Entries'
+
+    def __str__(self):
+        """Return a string representation of the model"""
+        if(len(self.text) > 50):
+            return f"{self.text[:50]}..."
+        return f"{self.text}"

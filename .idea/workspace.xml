@@ -4,16 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5300d21b-ade0-4aaa-895a-a0e88a4309f9" name="Changes" comment="App directories added">
+    <list default="true" id="5300d21b-ade0-4aaa-895a-a0e88a4309f9" name="Changes" comment="Topics added">
+      <change afterPath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/topic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/topics.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning_log/learning_logs/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/LearningLog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LearningLog.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning_log/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_log/learning_log/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_log/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_log/learning_log/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_log/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,6 +57,8 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -54,6 +72,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.python.django.customization.DjangoModulesConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -78,7 +97,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1743003316282</updated>
-      <workItem from="1743003317324" duration="2926000" />
+      <workItem from="1743003317324" duration="5503000" />
     </task>
     <task id="LOCAL-00001" summary="Django added">
       <option name="closed" value="true" />
@@ -104,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743006829426</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Topics added">
+      <option name="closed" value="true" />
+      <created>1743007264497</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743007264497</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +140,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Django added" />
     <MESSAGE value="App directories added" />
-    <option name="LAST_COMMIT_MESSAGE" value="App directories added" />
+    <MESSAGE value="Topics added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Topics added" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
