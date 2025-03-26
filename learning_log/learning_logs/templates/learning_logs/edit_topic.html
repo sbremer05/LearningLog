@@ -2,6 +2,8 @@
 
 {% block content %}
 
+    <a href = "{% url 'learning_logs:topics' %}">Topics</a>
+
     <p>Edit topic:</p>
 
     <form action = "{% url 'learning_logs:edit_topic' topic.id %}" method = 'post'>
