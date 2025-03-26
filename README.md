@@ -22,10 +22,3 @@ LearningLog is a web application built with Django that allows users to log the 
 ### Home Page
 - Provides an overview of the site.
 - Invites users to register or log in.
-
-## Installation
-
-### Prerequisites
-- Python (>=3.8)
-- Django (>=4.0)
-- Virtual environment (recommended)
