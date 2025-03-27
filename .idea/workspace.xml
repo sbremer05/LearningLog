@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5300d21b-ade0-4aaa-895a-a0e88a4309f9" name="Changes" comment="User must now be logged in to access everything except home, login, and registration pages">
-      <change beforePath="$PROJECT_DIR$/learning_log/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/views.py" afterDir="false" />
+    <list default="true" id="5300d21b-ade0-4aaa-895a-a0e88a4309f9" name="Changes" comment="New topics are now associated with the user">
+      <change beforePath="$PROJECT_DIR$/learning_log/learning_log/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_log/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1743003316282</updated>
-      <workItem from="1743003317324" duration="13494000" />
+      <workItem from="1743003317324" duration="15793000" />
     </task>
     <task id="LOCAL-00001" summary="Django added">
       <option name="closed" value="true" />
@@ -202,7 +201,31 @@
       <option name="project" value="LOCAL" />
       <updated>1743033092191</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Users now have privacy to their created topics">
+      <option name="closed" value="true" />
+      <created>1743033464678</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1743033464678</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Users now have privacy to all their topics and entries, including the editing and creating pages">
+      <option name="closed" value="true" />
+      <created>1743033646599</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1743033646599</updated>
+    </task>
+    <task id="LOCAL-00017" summary="New topics are now associated with the user">
+      <option name="closed" value="true" />
+      <created>1743033723965</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1743033723965</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +245,10 @@
     <MESSAGE value="User can now register" />
     <MESSAGE value="User must now be logged in to access topics" />
     <MESSAGE value="User must now be logged in to access everything except home, login, and registration pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="User must now be logged in to access everything except home, login, and registration pages" />
+    <MESSAGE value="Users now have privacy to their created topics" />
+    <MESSAGE value="Users now have privacy to all their topics and entries, including the editing and creating pages" />
+    <MESSAGE value="New topics are now associated with the user" />
+    <option name="LAST_COMMIT_MESSAGE" value="New topics are now associated with the user" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
