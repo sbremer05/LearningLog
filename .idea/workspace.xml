@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5300d21b-ade0-4aaa-895a-a0e88a4309f9" name="Changes" comment="New topics are now associated with the user">
-      <change beforePath="$PROJECT_DIR$/learning_log/learning_log/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_log/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/base.html" afterDir="false" />
+    <list default="true" id="5300d21b-ade0-4aaa-895a-a0e88a4309f9" name="Changes" comment="Login in now implemented via Bootstrap">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_log/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/topics.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/topics.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1743003316282</updated>
-      <workItem from="1743003317324" duration="15793000" />
+      <workItem from="1743003317324" duration="16799000" />
     </task>
     <task id="LOCAL-00001" summary="Django added">
       <option name="closed" value="true" />
@@ -225,7 +227,31 @@
       <option name="project" value="LOCAL" />
       <updated>1743033723965</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Bootstrap implemented on homepage">
+      <option name="closed" value="true" />
+      <created>1743035770852</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1743035770852</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Homepage now implemented via bootstrap">
+      <option name="closed" value="true" />
+      <created>1743036063817</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1743036063817</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Login in now implemented via Bootstrap">
+      <option name="closed" value="true" />
+      <created>1743036418551</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1743036418551</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +274,10 @@
     <MESSAGE value="Users now have privacy to their created topics" />
     <MESSAGE value="Users now have privacy to all their topics and entries, including the editing and creating pages" />
     <MESSAGE value="New topics are now associated with the user" />
-    <option name="LAST_COMMIT_MESSAGE" value="New topics are now associated with the user" />
+    <MESSAGE value="Bootstrap implemented on homepage" />
+    <MESSAGE value="Homepage now implemented via bootstrap" />
+    <MESSAGE value="Login in now implemented via Bootstrap" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login in now implemented via Bootstrap" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
