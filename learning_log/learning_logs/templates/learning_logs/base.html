@@ -35,30 +35,32 @@
         <div class = "collapse navbar-collapse" id = "navbarCollapse">
 
             <!-- Left Side: Topics -->
-            <ul class = "navbar-nav me-auto">
-                <li class = "nav-item">
-                    <a class = "nav-link" href = "{% url 'learning_logs:topics' %}">
-                        Topics
-                    </a>
-                </li>
-            </ul>
+            {% if user.is_authenticated %}
+                <ul class = "navbar-nav me-auto">
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "{% url 'learning_logs:topics' %}">
+                            Topics
+                        </a>
+                    </li>
+                </ul>
 
             <!-- Centered Username (Only shown if logged in) -->
-            {% if user.is_authenticated %}
                 <spann class = "navbar-text mx-auto">
                     {{ user.username }}
                 </spann>
-            {% endif %}
 
             <!-- Right Side: Logout -->
-            <ul class = "navbar-nav ms-auto">
-                {% if user.is_authenticated %}
+                <ul class = "navbar-nav ms-auto">
                     <li class = "nav-item">
-                        <a class = "nav-link" href = "{% url 'users:logout' %}">
-                            Log out</a>
+                        <form action = "{% url 'users:logout' %}" method = "post">
+                            {% csrf_token %}
+                            <button type = "submit" class = "nav-link btn btn-link">
+                                Log Out
+                            </button>
+                        </form>
                     </li>
-                {% endif %}
-            </ul>
+                </ul>
+            {% endif %}
         </div>
     </nav>
 

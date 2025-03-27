@@ -1,4 +1,5 @@
 {% extends "learning_logs/base.html" %}
+{% load bootstrap5 %}
 
 {% block page_header %}
     <h1>
@@ -11,9 +12,22 @@
     <ul>
         {% for topic in topics %}
             <li><h3>
-                <a href = "{% url 'learning_logs:topic' topic.id %}">
+                <p><a href = "{% url 'learning_logs:topic' topic.id %}">
                     {{ topic }}
+                </a></p>
+
+                <p><a href = "{% url 'learning_logs:edit_topic' topic.id %}"
+                   class = "btn btn-secondary">
+                        Edit Topic
+                </a></p>
+
+                <a href = "{% url 'learning_logs:delete_topic' topic.id %}">
+                    {% csrf_token %}
+                    <button type = "submit" class = "btn btn-danger">
+                        Delete Topic
+                    </button>
                 </a>
+
             </h3></li>
         {% empty %}
             <li><h3>
@@ -22,8 +36,11 @@
         {% endfor %}
     </ul>
 
-    <h3><a href = "{% url 'learning_logs:new_topic' %}">
-        Add a new topic
-    </a></h3>
+    <h3>
+        <a href = "{% url 'learning_logs:new_topic' %}"
+            class = "btn btn-primary">
+                Add Topic
+        </a>
+    </h3>
 
 {% endblock content %}

@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5300d21b-ade0-4aaa-895a-a0e88a4309f9" name="Changes" comment="Login in now implemented via Bootstrap">
+    <list default="true" id="5300d21b-ade0-4aaa-895a-a0e88a4309f9" name="Changes" comment="Full app now implemented via Django">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning_log/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/edit_entry.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/edit_entry.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/edit_topic.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/edit_topic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/new_entry.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/new_entry.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/new_topic.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/new_topic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/topic.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/topic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/topics.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/templates/learning_logs/topics.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_log/learning_logs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/learning_logs/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +97,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1743003316282</updated>
-      <workItem from="1743003317324" duration="16799000" />
+      <workItem from="1743003317324" duration="20440000" />
     </task>
     <task id="LOCAL-00001" summary="Django added">
       <option name="closed" value="true" />
@@ -251,7 +259,23 @@
       <option name="project" value="LOCAL" />
       <updated>1743036418551</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Topics page now implemented via Bootstrap">
+      <option name="closed" value="true" />
+      <created>1743036772803</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1743036772803</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Topic page now implemented via Bootstrap. Homepage modified">
+      <option name="closed" value="true" />
+      <created>1743037691535</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1743037691535</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +301,10 @@
     <MESSAGE value="Bootstrap implemented on homepage" />
     <MESSAGE value="Homepage now implemented via bootstrap" />
     <MESSAGE value="Login in now implemented via Bootstrap" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login in now implemented via Bootstrap" />
+    <MESSAGE value="Topics page now implemented via Bootstrap" />
+    <MESSAGE value="Topic page now implemented via Bootstrap. Homepage modified" />
+    <MESSAGE value="Full app now implemented via Django" />
+    <option name="LAST_COMMIT_MESSAGE" value="Full app now implemented via Django" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

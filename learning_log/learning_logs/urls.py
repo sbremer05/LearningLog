@@ -26,4 +26,10 @@ urlpatterns = [
 
 #     Page for editing an entry
     path('<int:topic_id>/<int:entry_id>/edit/', views.edit_entry, name = 'edit_entry'),
+
+#     Page for deleting a topic
+    path('<int:topic_id>/delete/', views.delete_topic, name = 'delete_topic'),
+
+#     Page for deleting an entry
+    path('<int:topic_id>/<int:entry_id>/delete/', views.delete_entry, name = 'delete_entry'),
 ]

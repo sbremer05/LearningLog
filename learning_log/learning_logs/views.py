@@ -82,7 +82,7 @@ def edit_topic(request, topic_id):
 
     if request.method != 'POST':
         # No data submitted; create a blank form
-        form = TopicForm()
+        form = TopicForm(instance = topic)
     else:
         # POST data submitted; process data
         form = TopicForm(instance = topic, data = request.POST)
@@ -105,7 +105,7 @@ def edit_entry(request, topic_id, entry_id):
 
     if request.method != 'POST':
         # No data submitted; create a blank form
-        form = EntryForm()
+        form = EntryForm(instance = entry)
     else:
         # POST data submitted; process data
         form = EntryForm(instance = entry, data = request.POST)
@@ -115,3 +115,26 @@ def edit_entry(request, topic_id, entry_id):
     # Display a blank or invalid form
     context = {'topic': topic, 'entry': entry, 'form': form}
     return render(request, 'learning_logs/edit_entry.html', context)
+
+@login_required
+def delete_topic(request, topic_id):
+    """Delete a topic"""
+    topic = Topic.objects.get(id = topic_id)
+
+    if topic.owner != request.user:
+        raise Http404
+
+    topic.delete()
+    return redirect('learning_logs:topics')
+
+@login_required
+def delete_entry(request, topic_id, entry_id):
+    """Delete an entry"""
+    topic = Topic.objects.get(id = topic_id)
+    entry = Entry.objects.get(id = entry_id)
+
+    if topic.owner != request.user:
+        raise Http404
+
+    entry.delete()
+    return redirect('learning_logs:topic', topic_id = topic_id)

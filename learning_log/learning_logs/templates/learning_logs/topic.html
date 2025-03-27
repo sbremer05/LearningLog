@@ -1,16 +1,17 @@
 {% extends 'learning_logs/base.html' %}
 
 {% block page_header %}
-    <h3>
+    <h1>
         {{ topic }}
-    </h3>
+    </h1>
 {% endblock page_header %}
 
 {% block content %}
 
     <p>
-        <a href = "{% url 'learning_logs:new_entry' topic.id %}">
-            Add new entry
+        <a href = "{% url 'learning_logs:new_entry' topic.id %}"
+        class = "btn btn-primary">
+            Add Entry
         </a>
     </p>
 
@@ -18,14 +19,24 @@
         <div class = "card mb-3">
             <h4 class = "chard-header">
                 {{ entry.date_added|date:'M d, Y H:i' }}
-                <small><a href = "{% url 'learning_logs:edit_entry' topic.id entry.id %}">
-                    Edit entry
-                </a></small>
             </h4>
 
             <div class = "card-body">
                 {{ entry.text|linebreaks }}
             </div>
+
+            <p><a href = "{% url 'learning_logs:edit_entry' topic.id entry.id %}"
+                class = "btn btn-secondary">
+                    Edit Entry
+            </a></p>
+
+            <a href = "{% url 'learning_logs:delete_entry' topic.id entry.id %}">
+                {% csrf_token %}
+                <button type = "submit" class = "btn btn-danger">
+                    Delete Entry
+                </button>
+            </a>
+
         </div>
     {% empty %}
         <p>
