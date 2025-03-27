@@ -1,6 +1,6 @@
 # LearningLog
 
-LearningLog is a web application built with Django that allows users to log the topics they’re interested in and make journal entries as they learn about each topic. Users can track their learning progress over time by creating and updating topics and entries.
+LearningLog is a web application built with Django that allows users to log the topics they’re interested in and make journal entries as they learn about each topic. Users can track their learning progress over time by creating and updating topics and entries. Users can also delete topics and entries. Utilizes Bootstrap5 for visuals.
 
 ## Features
 
